@@ -18,7 +18,7 @@ h2 {
 .cards {  
     display: grid;
     grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(46, 80px);
+    grid-template-rows: repeat(6, 80px);
     grid-template-areas:
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
