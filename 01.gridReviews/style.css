@@ -23,9 +23,9 @@ h2 {
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
-        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive . . ."
-        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive . . ."
-        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive . . .";
+        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardThree cardThree cardThree"
+        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardThree cardThree cardThree"
+        "cardFour cardFour cardFour cardFour cardFive cardFive cardFive cardThree cardThree cardThree";
         
     gap: 30px;
     padding-top: 100px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 .cardThree {
-    height: 570px;
+
     grid-area: cardThree;
 }
 
@@ -100,7 +100,7 @@ img {
     width: 46px;
     height: 46px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 80px;
     vertical-align: -8px;
 }
 
