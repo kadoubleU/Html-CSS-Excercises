@@ -18,7 +18,7 @@ h2 {
 .cards {  
     display: grid;
     grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(11, 100px);
+    grid-template-rows: repeat(46, 80px);
     grid-template-areas:
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
         "cardOne cardOne cardOne cardTwo cardTwo cardTwo cardTwo cardThree cardThree cardThree"
@@ -46,7 +46,7 @@ h2 {
 }
 
 .cardThree {
-    height: 695px;
+    height: 570px;
     grid-area: cardThree;
 }
 
@@ -92,7 +92,7 @@ img {
     width: 46px;
     height: 46px;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     vertical-align: -8px;
 }
 
@@ -100,7 +100,7 @@ img {
     width: 46px;
     height: 46px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 70px;
     vertical-align: -8px;
 }
 
@@ -108,7 +108,7 @@ img {
     width: 46px;
     height: 46px;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     vertical-align: -8px;
 }
 
@@ -116,7 +116,7 @@ img {
     width: 46px;
     height: 46px;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     vertical-align: -8px;
 }
 
