@@ -1,5 +1,4 @@
 # Html-CSS-Excercises
-Here I will upload project for excercise different conceptions in HTML and CSS.
+This is the Result from files upload in this folder. I excercise Grid.
 
-![alt text](https://github.com/[kadoubleU]/[Html-CSS-Excercises]/blob/[main]/result.jpg?raw=true)
-
+<img src="https://github.com/kadoubleU/Html-CSS-Excercises/blob/main/01.gridReviews/result.png" alt="Alt text" title="Optional title">
