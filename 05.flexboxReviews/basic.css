@@ -1,0 +1,29 @@
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+  }
+  
+  html, body {
+    background-color: #ffeead;
+    margin: 10px;
+  }
+  
+  .home {
+    background-color: #96ceb4;	
+  }
+  
+  .search {
+    background-color: #ff6f69;
+  }
+  
+  .logout {
+    background-color: #88d8b0;
+  }
+
+  .profile {
+    background-color: #979797;
+  }
+  
+  
