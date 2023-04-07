@@ -154,6 +154,10 @@
     color: #ffffff;
 }
 
+.active:hover {
+    background-color: #917AEB;
+}
+
 .activeBackground {
     background-color:transparent;
     color: #1E2A39;
@@ -343,6 +347,16 @@
     color: #B6BCC5;
     padding-top: 100px;
     padding-bottom: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #B6BCC5;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #FFA654;
 }
 
 .input-box {
