@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -11,102 +12,83 @@ body {
 
 /* Navigation Container START */
 
-.navigation {
+.container {
     max-width: 1440px;
-    width: 100%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 30%;
-    left: 15%;
+    padding: 34px 5%;
     margin: 0 auto;
-    height: 100px;
+    background-color: #ffffff;
+}
+
+.navigation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navigationStyle {
-    margin-left: 360px;
-    padding-right: 360px;
+.logo p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.25px;
+    letter-spacing: -0.29px;
+    color: #1E0E62;
+
 }
 
-.logo {
+.menu ul {
     display: flex;
-    justify-content: start;
-}
-
-.navUl {
-    display: flex;
-    justify-content: center;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
+    justify-content: space-between;
     gap: 40px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1E0E62
+}
+
+.menu a {
+    text-decoration: none;
     color: #1E0E62;
 }
 
-.buttons {
+.sign-buttons {
     display: flex;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 28px;
+    align-items: center;
 }
 
-.signInButton {
+.signIn {
+    color: #1E0E62;
     background-color: transparent;
     border-style: none;
-    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color:#1E0E62;
     line-height: 22px;
 }
 
-.signInButton:hover {
-    color: #482BE7;
-    cursor: pointer;
-}
-
-.signUpButton {
+.signUp {
     background-color: #482BE7;
     border-radius: 100px;
     width: 100px;
     height: 40px;
-    font-family: 'DM Sans', sans-serif;
+    border-style: none;
+    color: #fff;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    color: #ffffff;
-    border: 0px;
+
 }
 
-.signUpButton:hover {
-    background-color: #1E0E62;;
-    cursor: pointer;
-}
+@media all and (max-width: 960px) {
+    .navigation {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-
-/* Navigation container END */
-
-.logo p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    color:#1E0E62;
-    line-height: 31px;
-    letter-spacing: -0.29px;
-}
-
-a {
-    text-decoration: none;
-    color: #1E0E62;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-a:hover {
-    color:#482BE7;
+    .menu ul {
+        gap: 20px;
+    }
 }
