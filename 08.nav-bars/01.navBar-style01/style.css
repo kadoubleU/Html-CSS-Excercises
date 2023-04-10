@@ -25,12 +25,13 @@ body {
     align-items: center;
 }
 
-.logo p {
+.logo a, p {
     font-size: 24px;
     font-weight: 700;
     line-height: 31.25px;
     letter-spacing: -0.29px;
     color: #1E0E62;
+    text-decoration: none;
 
 }
 
@@ -50,12 +51,26 @@ body {
     color: #1E0E62;
 }
 
+.menu a:hover {
+    color:#482BE7;
+}
+
 .sign-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 28px;
     align-items: center;
+}
+
+.signIn:hover {
+    cursor: pointer;
+    color:#482BE7;
+}
+
+.signUp:hover {
+    cursor: pointer;
+    background-color: #1E0E62;
 }
 
 .signIn {
