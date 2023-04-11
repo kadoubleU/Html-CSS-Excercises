@@ -122,7 +122,7 @@ body {
     }
 }
 
-@media all and (max-width: 776px) {
+@media all and (max-width: 1170px) {
     .ulMenu {
         flex-direction: column;
         justify-content: center;
@@ -130,3 +130,30 @@ body {
     
     }
 }
+
+/* Mobile */
+.mobileIcon {
+    display: none;
+}
+
+@media all and (max-width: 1170px) {
+    .icons {
+        display: none;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .mobileIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+

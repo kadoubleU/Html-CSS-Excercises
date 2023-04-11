@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation 3</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
     <link rel="stylesheet" href="style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
 <div class="parent">
@@ -35,8 +35,49 @@
                 <a class="iconsLinks" href="facebook.com"><i class="fa-brands  fa-facebook-square"></i></a>
                 <a class="iconsLinks" href="google.com"><i class="fa-brands fa-google-plus-g"></i></a>
             </div>
+
+            <div class="mobileIcon">
+                <i class="fa fa-bars" id="mobileButton"></i>
+                <i class="fa fa-bars" id="closeButton"></i>
+            </div>
     </div>
 </div>
+
+<script> 
+    $(document).ready(function(){
+        if ($(window).width() < 1170) {
+            $(".menu").hide();
+            $(".icons").hide();
+            }
+        $("#closeButton").hide();
+        $("#mobileButton").click(function(){
+            $(".menu").slideDown();
+            $(".icons").slideDown();   
+            $("#mobileButton").hide();
+            $("#closeButton").show();
+
+            if ($(window).width() >= 1170) {
+            $(".menu").show();
+            $(".icons").show();
+            }
+        });
+
+        $("#closeButton").click(function(){  
+            $(".menu").slideUp();
+            $(".icons").slideUp();
+            $("#closeButton").hide();
+            $("#mobileButton").show();
+
+            if ($(window).width() >= 1170) {
+            $(".menu").show();
+            $(".icons").show();
+            }
+        });
+
+        
+        
+    });
+    </script> 
 
 </body>
 </html>
