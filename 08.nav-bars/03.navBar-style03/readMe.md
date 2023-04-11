@@ -3,4 +3,4 @@ I create a Navigation bar from Figma Template to excercise the CSS. The Navigati
 
 Here is the result.
 
-<center><img src="https://github.com/kadoubleU/Html-CSS-Excercises/blob/main/08.nav-bars/03.navBar-style03/result1.png" alt="Navigation Bar"></center>
+<center><img src="https://github.com/kadoubleU/Html-CSS-Excercises/blob/main/08.nav-bars/03.navBar-style03/result.png" alt="Navigation Bar"></center>
