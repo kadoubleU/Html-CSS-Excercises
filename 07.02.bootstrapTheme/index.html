@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>New Bootstrap Theme</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Page Container START -->
-    <div class="pageContainer">
+    <div class="pageContainer" id="scroll">
         
     <!-- Main Container START -->
         
@@ -67,8 +68,11 @@
 
         <!-- Header END -->
         
+        <div class="scrollButton">
+            <a href="#scroll"><button id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size:32px"></i></button></a>
+        </div>
         <!-- Section №1 START -->
-        <div class="section d-lg-flex justify-content-center align-items-center">
+        <div class="section d-lg-flex d-md-flex justify-content-center align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="d-grid justify-content-start align-items-center">         
                     <h2 class="sectionH2">You can meet your customers face-to-face online through our video chatbot.</h2>
@@ -87,7 +91,7 @@
          <!-- Section №1 END -->
 
          <!-- Section №2 START -->
-        <div class="section d-lg-flex flex-row-reverse justify-content-center align-items-center">
+        <div class="section d-lg-flex d-md-flex flex-row-reverse justify-content-center align-items-center">
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="d-grid justify-content-start align-items-center">         
                     <h2 class="sectionH2">See what your visitors are looking at right now.</h2>
@@ -161,7 +165,7 @@
          <!-- Section №4 END -->
 
         <!-- Section №5 START -->
-        <div class="section d-lg-flex justify-content-center align-items-center">
+        <div class="section d-lg-flex d-md-flex justify-content-center align-items-center">
 
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="d-flex justify-content-center align-items-center">
@@ -260,7 +264,20 @@
     </div>
 
 <!-- Page Container END -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 100) { // Change 100 to the number of pixels you want the user to scroll before the element becomes visible
+            $(".scrollButton").show();
+            } else {
+            $(".scrollButton").hide();
+        }
+    });
+    });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
