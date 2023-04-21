@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindVersion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
+</head>
+<body>
+    <h2>Style with Tailwind CSS</h2>
+    <div class="accent-pink-500">
+        <div>
+        <label for="checkBox1">Checkbox 1</label>
+        <input type="checkbox" id="checkBox1" value="CheckBox 1">
+        <br>
+        <label for="checkBox2">Checkbox 2</label>
+        <input type="checkbox" id="checkBox2" value="CheckBox 2" checked>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="radio1">Radio 1</label>
+        <input type="radio" id="radio1" name="Radio1" value="Radio 1" checked>
+        <br>
+        <label for="radio2">Radio 2</label>
+        <input type="radio" id="radio2" name="Radio2" value="Radio 2">
+        </div>
+
+        <br>
+        <label for="progressBar">Progress Bar</label>
+          <div class="mb-6 h-3 w-[200px] bg-neutral-200">
+            <div class="h-3 bg-pink-500" style="width: 41%"></div>
+          </div>
+    </div>
+    <br>
+    <h2><strong>Back to Index HTML</strong></h2>
+    <br>
+    <div class="acentColorStyle">
+        <a href="index.html"> Link To Index Version</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+</html>
