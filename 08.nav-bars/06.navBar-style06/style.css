@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: #1E0E62;
+}
+
+body {
+    background-color: #E9E9E9;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navigationContainer {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:115px;
+    padding-right: 115px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: -0.292683px;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color:#E93A7D;
+}
+
+.mainNav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.mainNav a {
+    text-decoration: none;
+}
+
+.mainNav a:hover {
+    color: #E93A7D;
+    font-weight: 700;
+}
+
+#buyButton {
+    background-color: #E93A7D;
+    border: none;
+    color: #fff;
+    width: 108px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+#buyButton:hover {
+    background-color: #D32669;
+    font-weight: 700;
+}
+
+@media (max-width: 840px) {
+    .navigationContainer {
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .mainNav {
+        padding-bottom: 10px;
+        gap: 20px;
+        justify-content:center;
+        align-items: center;
+    }
+}
